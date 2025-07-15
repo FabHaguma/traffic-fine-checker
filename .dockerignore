@@ -1,0 +1,12 @@
+# Exclude Python's virtual environment folder
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Exclude sensitive files if they are not needed inside the container
+# We WILL copy .env and config.ini in, but this is good practice for other files.
+.git
+.gitignore
+.dockerignore
